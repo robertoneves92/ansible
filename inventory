@@ -1,0 +1,10 @@
+[app]
+srv-app1 ansible_host=186.227.201.21 ansible_port=1891
+srv-app2 ansible_host=186.227.201.22 ansible_port=1891
+srv-app3 ansible_host=186.227.201.23 ansible_port=1891
+srv-app4 ansible_host=186.227.201.24 ansible_port=1891
+srv-app5 ansible_host=186.227.201.25 ansible_port=1891
+srv-app6 ansible_host=186.227.201.27 ansible_port=1891
+srv-app7 ansible_host=186.227.201.28 ansible_port=1891	
+srv-app8 ansible_host=186.227.201.30 ansible_port=1891
+srv-app9 ansible_host=186.227.201.20 ansible_port=1892
