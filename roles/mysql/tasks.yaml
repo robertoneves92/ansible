@@ -7,8 +7,9 @@
 #    - mariadb-server
 #    - mariadb
 
-- name: Update Mysql config
-  copy: src=my.cnf dest=/etc/my.cnf
+- name: Update Mysql config and rc.local
+  copy: src=/mysql/my.cnf dest=/etc/my.cnf
+  copy: src=/scripts/rc.local dest=/etc/rc.local
   notify:
     - restart mariadb
 
