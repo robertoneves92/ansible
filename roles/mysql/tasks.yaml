@@ -1,0 +1,16 @@
+#- name: Install mysql packages
+#  apt: name={{ item }} state=present
+#  with_items:
+#    - mariadb-server
+#    - mariadb
+
+- name: Update Mysql config
+  copy: src=my.cnf dest=/etc/my.cnf
+  notify:
+    - restart mariadb
+
+#- name: Start Mysql Service
+#  service: name=mysql state=started enabled=true
+
+#- name: Create behoh user
+#  mysql_user: name=behoh password=behoh@2022 priv=*.*:ALL,GRANT host=% state=present
